@@ -1033,11 +1033,31 @@ a:hover {
 .footer__inner {
   max-width: var(--content-wide);
   margin: 0 auto;
+}
+
+.footer__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.footer__sms-consent {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-5);
+}
+
+.footer__sms-consent p {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: var(--color-text-faint);
+}
+
+.footer__sms-consent a {
+  color: var(--color-text-muted);
+  text-decoration: underline;
 }
 
 .footer__left {
