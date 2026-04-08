@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — DeedCore</title>
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<style>
+  .thanks { padding: clamp(var(--space-16), 12vw, var(--space-32)) var(--space-6); text-align: center; min-height: 60vh; display: flex; align-items: center; justify-content: center; }
+  .thanks__inner { max-width: 520px; margin: 0 auto; }
+  .thanks__icon { font-size: 3rem; margin-bottom: var(--space-4); }
+  .thanks__title { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-4); }
+  .thanks__text { font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-8); }
+  .thanks__cta { display: inline-flex; gap: var(--space-2); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="./index.html" class="nav__logo">
+      <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-label="DeedCore logo">
+        <rect x="2" y="2" width="36" height="36" rx="10" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="2" fill="currentColor"/>
+      </svg>
+      DeedCore
+    </a>
+  </div>
+</nav>
+
+<section class="thanks">
+  <div class="thanks__inner">
+    <div class="thanks__icon">&#10003;</div>
+    <h1 class="thanks__title">We Got Your Info</h1>
+    <p class="thanks__text">Thanks for reaching out. We'll be in touch within 24 hours. In the meantime, feel free to book a demo directly if you'd like to see DeedCore in action.</p>
+    <a href="https://calendly.com/bobanion" target="_blank" rel="noopener noreferrer" class="btn-primary thanks__cta">
+      Book a Demo Now
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
