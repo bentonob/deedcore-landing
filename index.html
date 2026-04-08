@@ -268,45 +268,144 @@
   <div class="how-it-works__inner">
     <div class="how-it-works__header">
       <p class="section-label fade-in">How It Works</p>
-      <h2 class="section-title fade-in">Live in 48 Hours. No IT Required.</h2>
+      <h2 class="section-title fade-in">Every Call. Every Patient. Handled.</h2>
       <p class="section-subtitle fade-in">
-        We handle everything. You just keep seeing patients.
+        Here's what happens the moment someone calls your practice.
       </p>
     </div>
 
-    <div class="steps">
-      <div class="step fade-in">
-        <div class="step__number">1</div>
-        <div class="step__content">
-          <h3 class="step__title">Discovery Call</h3>
-          <p class="step__text">A 15-minute call to understand your practice — hours, services, insurance accepted, and common patient questions. We build your AI around your specific practice.</p>
+    <!-- Animated Flow Diagram -->
+    <div class="flow-diagram fade-in">
+
+      <!-- Node 1: Patient Calls -->
+      <div class="flow-node flow-node--start" data-step="1">
+        <div class="flow-node__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.71 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="flow-node__label">Patient Calls</div>
+        <div class="flow-node__sub">Any time, day or night</div>
+      </div>
+
+      <div class="flow-connector">
+        <div class="flow-connector__line"></div>
+        <div class="flow-connector__dot"></div>
+      </div>
+
+      <!-- Node 2: AI Answers -->
+      <div class="flow-node flow-node--ai" data-step="2">
+        <div class="flow-node__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="3"/><path d="M8 9h8M8 13h5"/><circle cx="17" cy="17" r="3" fill="currentColor" stroke="none" opacity="0.3"/><circle cx="17" cy="17" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div class="flow-node__label">AI Answers</div>
+        <div class="flow-node__sub">Sounds like your receptionist</div>
+        <div class="flow-node__badge">24/7</div>
+      </div>
+
+      <div class="flow-connector">
+        <div class="flow-connector__line"></div>
+        <div class="flow-connector__dot"></div>
+      </div>
+
+      <!-- Node 3: Branch -->
+      <div class="flow-branch">
+        <div class="flow-branch__label">What happens next?</div>
+        <div class="flow-branch__paths">
+
+          <div class="flow-path flow-path--answered">
+            <div class="flow-path__tag">Call Answered</div>
+            <div class="flow-path__steps">
+              <div class="flow-mini-node">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+                Books appointment
+              </div>
+              <div class="flow-path__arrow">→</div>
+              <div class="flow-mini-node flow-mini-node--success">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Confirmed &amp; added to calendar
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-path flow-path--missed">
+            <div class="flow-path__tag flow-path__tag--missed">Missed Call</div>
+            <div class="flow-path__steps">
+              <div class="flow-mini-node">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Text-back in 60s
+              </div>
+              <div class="flow-path__arrow">→</div>
+              <div class="flow-mini-node">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+                AI books via SMS
+              </div>
+              <div class="flow-path__arrow">→</div>
+              <div class="flow-mini-node flow-mini-node--success">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Patient recovered
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="step fade-in">
-        <div class="step__number">2</div>
-        <div class="step__content">
-          <h3 class="step__title">We Build & Configure</h3>
-          <p class="step__text">Our team sets up your AI voice agent, missed call workflows, and review automation. Customized with your practice name, address, and scheduling preferences.</p>
-        </div>
+      <div class="flow-connector flow-connector--merge">
+        <div class="flow-connector__line"></div>
+        <div class="flow-connector__dot"></div>
       </div>
 
-      <div class="step fade-in">
-        <div class="step__number">3</div>
-        <div class="step__content">
-          <h3 class="step__title">Test & Launch</h3>
-          <p class="step__text">You test-call the system, approve the setup, and we go live. Your new AI front desk starts answering calls and generating reviews immediately.</p>
+      <!-- Node 4: Appointment Complete -->
+      <div class="flow-node" data-step="3">
+        <div class="flow-node__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
+        <div class="flow-node__label">Appointment Complete</div>
+        <div class="flow-node__sub">Patient visits practice</div>
       </div>
 
-      <div class="step fade-in">
-        <div class="step__number">4</div>
-        <div class="step__content">
-          <h3 class="step__title">Ongoing Optimization</h3>
-          <p class="step__text">We monitor performance weekly — call handling, text response rates, review conversion. We tune the system so it keeps getting better.</p>
+      <div class="flow-connector">
+        <div class="flow-connector__line"></div>
+        <div class="flow-connector__dot"></div>
+      </div>
+
+      <!-- Node 5: Review Request -->
+      <div class="flow-node flow-node--end" data-step="4">
+        <div class="flow-node__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="flow-node__label">Review Request Sent</div>
+        <div class="flow-node__sub">Automated Google review ask</div>
+        <div class="flow-node__badge flow-node__badge--gold">&#9733; 4.8</div>
+      </div>
+
+    </div>
+
+    <!-- Setup steps below -->
+    <div class="setup-steps fade-in">
+      <p class="setup-steps__label">Getting started is simple</p>
+      <div class="setup-steps__grid">
+        <div class="setup-step">
+          <div class="setup-step__num">1</div>
+          <div class="setup-step__text"><strong>15-min call</strong> — we learn your practice</div>
+        </div>
+        <div class="setup-step__arrow">&#8594;</div>
+        <div class="setup-step">
+          <div class="setup-step__num">2</div>
+          <div class="setup-step__text"><strong>We build</strong> — customized in 48 hrs</div>
+        </div>
+        <div class="setup-step__arrow">&#8594;</div>
+        <div class="setup-step">
+          <div class="setup-step__num">3</div>
+          <div class="setup-step__text"><strong>You test</strong> — approve and go live</div>
+        </div>
+        <div class="setup-step__arrow">&#8594;</div>
+        <div class="setup-step">
+          <div class="setup-step__num">4</div>
+          <div class="setup-step__text"><strong>We optimize</strong> — weekly monitoring</div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
